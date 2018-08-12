@@ -1,7 +1,5 @@
-# Google Chrome'da Ana Ekrana Ekle Popup Kodu
-
-[☛ Chrome 42+ (Android için)](https://www.chromestatus.com/features/4540065577435136)
+# Android Cihazlarda 'Ana Ekrana Ekle' Popup Kodu
 
 Kurulum detaylarını linkten ulaşabilirsiniz.
 
-[☛ Google Chrome'da Ana Ekrana Ekle Popup Kodu](http://ahmetcadirci.com.tr/2017/google-chrome-da-ana-ekrana-ekle-popup-kodu/)
+[☛ Android Cihazlarda 'Ana Ekrana Ekle' Popup Kodu](https://ahmetcadirci.com.tr/2018/android-cihazlarda-ana-ekrana-ekle-popup-kodu/)
