@@ -3,14 +3,20 @@
 <head>
 
   <!-- Web App Manifest -->
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="/ana-ekrana-ekle/manifest.json">
 
 </head>
 <body>
 
+<h1>Android Cihazlarda 'Ana Ekrana Ekle' Popup Kodu</h1>
+
+<h3>Kurulum detaylarını linkten ulaşabilirsiniz.</h3>
+
+<a href="https://ahmetcadirci.com.tr/2018/android-cihazlarda-ana-ekrana-ekle-popup-kodu/">☛ Android Cihazlarda 'Ana Ekrana Ekle' Popup Kodu</a>
+
 <script>
   if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js?v3', {
+        navigator.serviceWorker.register('/ana-ekrana-ekle/sw.js?v3', {
             scope: '.' // THIS IS REQUIRED FOR RUNNING A PROGRESSIVE WEB APP FROM A NON_ROOT PATH
         }).then(function(registration) {
             // Registration was successful
