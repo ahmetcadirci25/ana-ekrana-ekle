@@ -1,37 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Google Chrome'da Ana Ekrana Ekle Popup Kodu</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="manifest.json">
-    <script> 
-    window.addEventListener('load', function() {
+<head>
 
-      var outputElement = document.getElementById('output');
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="/manifest.json">
 
-      navigator.serviceWorker.register('sw.js', { scope: './' })
-        .then(function(r) {
-          console.log('registered service worker');
-        })
-        .catch(function(whut) {
-          console.error('uh oh... ');
-          console.error(whut);
+</head>
+<body>
+
+<script>
+  if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js?v3', {
+            scope: '.' // THIS IS REQUIRED FOR RUNNING A PROGRESSIVE WEB APP FROM A NON_ROOT PATH
+        }).then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
         });
-       
-      window.addEventListener('beforeinstallprompt', function(e) {
-        outputElement.textContent = 'beforeinstallprompt Event fired';
-      });
-    });
-    </script>
-  </head>
-  <body>
-    <h1>Google Chrome'da Ana Ekrana Ekle Popup Kodu</h1>
-
-    <p><a href="https://www.chromestatus.com/features/4540065577435136">Chrome 42+ (Android için) </a></p>
-
-    <p>Kurulum detaylarını linkten ulaşabilirsiniz.</p>
-    
-    <a href="http://ahmetcadirci.com.tr/2017/google-chrome-da-ana-ekrana-ekle-popup-kodu/">Google Chrome'da Ana Ekrana Ekle Popup Kodu</a>
-    
-  </body>
+    }
+</script>
+</body>
 </html>

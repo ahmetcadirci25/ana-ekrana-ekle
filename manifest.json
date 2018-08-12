@@ -33,7 +33,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "https://ahmetcadirci.com.tr/?utm_source=webapp",
+  "start_url": "/?utm_source=webapp",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone",
