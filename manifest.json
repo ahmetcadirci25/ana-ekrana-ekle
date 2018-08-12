@@ -33,7 +33,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/?utm_source=webapp",
+  "start_url": "/ana-ekrana-ekle/?utm_source=webapp",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone",
